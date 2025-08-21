@@ -6,7 +6,7 @@ const transactionData = [
         type: 'income',
         category: '打赏',
         description: '赞助',
-        amount: 300,
+        amount: 0,
         details: 'XXX'
     },
     
@@ -97,8 +97,8 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 405,
-        '其他收入': 200
+        '赞助打赏': 0,
+        '其他收入': 0
     },
     expense: {
         '设备维护': -919,
@@ -108,17 +108,19 @@ const categoryStats = {
 
 // 月度趋势数据
 const monthlyTrends = [
-    { month: '2024-12', income: 605, expense: 0 },
-    { month: '2025-01', income: 0, expense: -1400 },
-    { month: '2025-02', income: 0, expense: -2300 },
-    { month: '2025-03', income: 0, expense: -3000 },
-    { month: '2025-06', income: 0, expense: -2500 },
-    { month: '2025-07', income: 0, expense: -6900 }
+    { month: '2024-04', income: 0, expense: -519 },
+    { month: '2024-07', income: 0, expense: -1368 },
+    { month: '2024-08', income: 0, expense: -91.59 },
+    { month: '2024-10', income: 0, expense: -35.93 },
+    { month: '2024-11', income: 0, expense: -470 },
+    { month: '2025-03', income: 0, expense: -219 },
+    { month: '2025-08', income: 0, expense: -449 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
