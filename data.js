@@ -92,12 +92,44 @@ const transactionData = [
     
     // 支出记录
     {
-        date: '2024-12',
+        date: '2024-07',
         type: 'expense',
-        category: '其他支出',
-        description: '素材',
-        amount: -420,
-        details: '1.0形象vroid(3d)制作素材购买'
+        category: '运营成本',
+        description: '服务器',
+        amount: -1300,
+        details: '准系统服务器采购'
+    }
+    {
+        date: '2024-07',
+        type: 'expense',
+        category: '运营成本',
+        description: '显卡',
+        amount: -68,
+        details: '服务器亮机卡'
+    }
+    {
+        date: '2024-08',
+        type: 'expense',
+        category: '运营成本',
+        description: '硬盘',
+        amount: -15.59,
+        details: '16G傲腾启动盘'
+    },
+    {
+        date: '2024-10',
+        type: 'expense',
+        category: '运营成本',
+        description: '视频采集卡',
+        amount: -35.93,
+        details: '服务器PiKVM采集卡'
+    },
+    {
+        date: '2024-11',
+        type: 'expense',
+        category: '设备维护',
+        description: '硬盘',
+        amount: -470,
+        details: '4TB希捷机械硬盘购买'
     },
     {
         date: '2024-12',
@@ -232,3 +264,4 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
