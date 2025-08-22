@@ -1,4 +1,4 @@
-// 芙蕾德莉卡营收透明化页面交互逻辑
+// 咸鱼之家营收透明化页面交互逻辑
 
 class RevenueTracker {
     constructor() {
@@ -363,5 +363,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 500);
     }
 });
+
 
 
