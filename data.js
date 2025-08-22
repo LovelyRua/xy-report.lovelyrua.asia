@@ -5,7 +5,7 @@ const transactionData = [
         date: '2024-03-05',
         type: 'income',
         category: '打赏',
-        description: '赞助打赏',
+        description: '赞助',
         amount: 50,
         details: 'CQC1442:"For minecraft" 赞助50元'
     },
@@ -13,7 +13,7 @@ const transactionData = [
         date: '2024-04-20',
         type: 'income',
         category: '打赏',
-        description: '赞助打赏',
+        description: '赞助',
         amount: 110,
         details: 'Achilles硬盘助力110元'
     },
@@ -21,15 +21,23 @@ const transactionData = [
         date: '2024-05-08',
         type: 'income',
         category: '打赏',
-        description: '赞助打赏',
+        description: '赞助',
         amount: 126,
         details: 'Fccgyh内存助力126元'
+    },
+    {
+        date: '2024-11-02',
+        type: 'income',
+        category: '算力出租',
+        description: 'eata233',
+        amount: 59,
+        details: '服务器算力出租'
     },
     {
         date: '2025-03-19',
         type: 'income',
         category: '打赏',
-        description: '赞助打赏',
+        description: '赞助',
         amount: 160,
         details: 'Creation_TV电量助力160元'
     },
@@ -37,14 +45,14 @@ const transactionData = [
         date: '2025-08-09',
         type: 'income',
         category: '打赏',
-        description: '赞助打赏',
+        description: '赞助',
         amount: 24,
         details: 'Achilles加速节点助力24元'
     },
     
     // 支出记录
     {
-        date: '2024-04',
+        date: '2024-04-17',
         type: 'expense',
         category: '运营成本',
         description: '硬盘',
@@ -52,15 +60,15 @@ const transactionData = [
         details: 'NVMe SSD 1TB'
     },
     {
-        date: '2024-07',
+        date: '2024-07-31',
         type: 'expense',
         category: '运营成本',
         description: '服务器',
-        amount: -1300,
+        amount: -750,
         details: '准系统服务器采购'
     },
     {
-        date: '2024-07',
+        date: '2024-07-31',
         type: 'expense',
         category: '运营成本',
         description: '显卡',
@@ -68,7 +76,7 @@ const transactionData = [
         details: '服务器亮机卡'
     },
     {
-        date: '2024-08',
+        date: '2024-08-16',
         type: 'expense',
         category: '运营成本',
         description: '硬盘',
@@ -76,7 +84,7 @@ const transactionData = [
         details: '16G傲腾启动盘'
     },
     {
-        date: '2024-08',
+        date: '2024-08-29',
         type: 'expense',
         category: '运营成本',
         description: '内存',
@@ -84,7 +92,7 @@ const transactionData = [
         details: '8G内存条'
     },
     {
-        date: '2024-10',
+        date: '2024-10-01',
         type: 'expense',
         category: '运营成本',
         description: '视频采集卡',
@@ -92,7 +100,7 @@ const transactionData = [
         details: '服务器PiKVM采集卡'
     },
     {
-        date: '2024-11',
+        date: '2024-11-27',
         type: 'expense',
         category: '设备维护',
         description: '硬盘',
@@ -100,7 +108,7 @@ const transactionData = [
         details: '4TB希捷机械硬盘购买'
     },
     {
-        date: '2025-03',
+        date: '2025-03-24',
         type: 'expense',
         category: '运营成本',
         description: '内存',
@@ -116,7 +124,7 @@ const transactionData = [
         details: '加速节点'
     },
     {
-        date: '2025-08',
+        date: '2025-08-04',
         type: 'expense',
         category: '设备维护',
         description: 'PDU',
@@ -124,7 +132,7 @@ const transactionData = [
         details: '远程管理插座'
     },
     {
-        date: '2025-08',
+        date: '2025-08-04',
         type: 'expense',
         category: '设备维护',
         description: '电源',
@@ -145,8 +153,8 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 0,
-        '其他收入': 0
+        '赞助打赏': 470,
+        '算力出租': 59
     },
     expense: {
         '设备维护': -919,
@@ -156,20 +164,22 @@ const categoryStats = {
 
 // 月度趋势数据
 const monthlyTrends = [
-    { month: '2024-04', income: 0, expense: -519 },
+    { month: '2024-03', income: 50, expense: -0 },
+    { month: '2024-04', income: 110, expense: -519 },
     { month: '2024-07', income: 0, expense: -1368 },
-    { month: '2024-08', income: 0, expense: -91.59 },
+    { month: '2024-08', income: 126, expense: -91.59 },
     { month: '2024-10', income: 0, expense: -35.93 },
-    { month: '2024-11', income: 0, expense: -470 },
-    { month: '2025-03', income: 0, expense: -219 },
+    { month: '2024-11', income: 59, expense: -470 },
+    { month: '2025-03', income: 160, expense: -219 },
     { month: '2025-04', income: 0, expense: -18 },
-    { month: '2025-08', income: 0, expense: -475.8 }
+    { month: '2025-08', income: 24, expense: -475.8 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
