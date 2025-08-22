@@ -153,12 +153,12 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 470,
+        '赞助打赏': 570,
         '算力出租': 59
     },
     expense: {
         '设备维护': -919,
-        '运营成本': -2278.32
+        '运营成本': -1728.32
     }
 };
 
@@ -166,8 +166,9 @@ const categoryStats = {
 const monthlyTrends = [
     { month: '2024-03', income: 50, expense: -0 },
     { month: '2024-04', income: 110, expense: -519 },
-    { month: '2024-07', income: 0, expense: -1368 },
-    { month: '2024-08', income: 126, expense: -91.59 },
+    { month: '2024-07', income: 0, expense: -818 },
+    { month: '2024-05', income: 126, expense: -0 },
+    { month: '2024-08', income: 0, expense: -91.59 },
     { month: '2024-10', income: 0, expense: -35.93 },
     { month: '2024-11', income: 59, expense: -470 },
     { month: '2025-03', income: 160, expense: -219 },
@@ -179,6 +180,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
