@@ -199,20 +199,15 @@ const monthlyTrends = [
     { month: '2024-03', income: 50, expense: 0 },
     { month: '2024-04', income: 110, expense: -519 },
     { month: '2024-05', income: 126, expense: 0 },
-    { month: '2024-06', income: 0, expense: 0 },
     { month: '2024-07', income: 0, expense: -818 },
     { month: '2024-08', income: 0, expense: -91.59 },
     { month: '2024-09', income: 0, expense: -180 },
     { month: '2024-10', income: 0, expense: -35.93 },
     { month: '2024-11', income: 59, expense: -470 },
     { month: '2024-12', income: 0, expense: -180 },
-    { month: '2025-01', income: 0, expense: 0 },
-    { month: '2025-02', income: 0, expense: 0 },
     { month: '2025-03', income: 160, expense: -399 },
     { month: '2025-04', income: 0, expense: -18 },
-    { month: '2025-05', income: 0, expense: 0 },
     { month: '2025-06', income: 0, expense: -180 },
-    { month: '2025-07', income: 0, expense: 0 },
     { month: '2025-08', income: 24, expense: -475.8 }
 ];
 
@@ -220,6 +215,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
