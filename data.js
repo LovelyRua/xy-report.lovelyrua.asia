@@ -185,7 +185,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 570,
+        '赞助打赏': 470,
         '算力出租': 59
     },
     expense: {
@@ -215,13 +215,3 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
-
-
-
-
-
-
-
-
-
-
