@@ -224,7 +224,7 @@ class RevenueTracker {
                 scales: {
                     y: {
                         beginAtZero: true,
-                        max: 8000,
+//                      max: 8000,
                         grid: {
                             color: 'rgba(147, 112, 219, 0.1)'
                         },
@@ -363,3 +363,4 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 500);
     }
 });
+
