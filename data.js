@@ -1,13 +1,45 @@
-// 芙蕾德莉卡活动营收数据
+// 咸鱼之家活动营收数据
 const transactionData = [
     // 收入记录
     {
-        date: '2024-07',
+        date: '2024-03-05',
         type: 'income',
         category: '打赏',
         description: '赞助',
-        amount: 0,
-        details: 'XXX'
+        amount: 50,
+        details: 'CQC1442:"For minecraft" 赞助50元'
+    },
+    {
+        date: '2024-04-20',
+        type: 'income',
+        category: '打赏',
+        description: '赞助',
+        amount: 110,
+        details: 'Achilles硬盘助力110元'
+    },
+    {
+        date: '2024-05-08',
+        type: 'income',
+        category: '打赏',
+        description: '赞助',
+        amount: 126,
+        details: 'Fccgyh内存助力126元'
+    },
+    {
+        date: '2025-03-19',
+        type: 'income',
+        category: '打赏',
+        description: '赞助',
+        amount: 160,
+        details: 'Creation_TV电量助力160元'
+    },
+    {
+        date: '2025-08-09',
+        type: 'income',
+        category: '打赏',
+        description: '赞助',
+        amount: 24,
+        details: 'Achilles加速节点助力24元'
     },
     
     // 支出记录
@@ -76,6 +108,14 @@ const transactionData = [
         details: '16G内存条*2'
     },
     {
+        date: '2025-04-05',
+        type: 'expense',
+        category: '运营成本',
+        description: '云服务器',
+        amount: -18,
+        details: '加速节点'
+    },
+    {
         date: '2025-08',
         type: 'expense',
         category: '设备维护',
@@ -91,6 +131,14 @@ const transactionData = [
         amount: -405.62,
         details: '更换老电源'
     },
+    {
+        date: '2025-08-09',
+        type: 'expense',
+        category: '运营成本',
+        description: '云服务器',
+        amount: -26.8,
+        details: '加速节点续费'
+    },
 
 ];
 
@@ -102,7 +150,7 @@ const categoryStats = {
     },
     expense: {
         '设备维护': -919,
-        '运营成本': -2233
+        '运营成本': -2278.32
     }
 };
 
@@ -114,13 +162,15 @@ const monthlyTrends = [
     { month: '2024-10', income: 0, expense: -35.93 },
     { month: '2024-11', income: 0, expense: -470 },
     { month: '2025-03', income: 0, expense: -219 },
-    { month: '2025-08', income: 0, expense: -449 }
+    { month: '2025-04', income: 0, expense: -18 },
+    { month: '2025-08', income: 0, expense: -475.8 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
