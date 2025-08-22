@@ -15,7 +15,7 @@ const transactionData = [
         category: '打赏',
         description: '赞助',
         amount: 110,
-        details: 'Achilles硬盘助力110元'
+        details: 'Achilles 硬盘助力110元'
     },
     {
         date: '2024-05-08',
@@ -23,7 +23,7 @@ const transactionData = [
         category: '打赏',
         description: '赞助',
         amount: 126,
-        details: 'Fccgyh内存助力126元'
+        details: 'Fccgyh 内存助力126元'
     },
     {
         date: '2024-11-02',
@@ -39,7 +39,7 @@ const transactionData = [
         category: '打赏',
         description: '赞助',
         amount: 160,
-        details: 'Creation_TV电量助力160元'
+        details: 'Creation_TV 电量助力160元'
     },
     {
         date: '2025-08-09',
@@ -47,7 +47,7 @@ const transactionData = [
         category: '打赏',
         description: '赞助',
         amount: 24,
-        details: 'Achilles加速节点助力24元'
+        details: 'Achilles 加速节点助力24元'
     },
     
     // 支出记录
@@ -179,6 +179,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
