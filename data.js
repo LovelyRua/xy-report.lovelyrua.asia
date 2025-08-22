@@ -5,7 +5,7 @@ const transactionData = [
         date: '2024-03-05',
         type: 'income',
         category: '打赏',
-        description: '赞助',
+        description: '赞助打赏',
         amount: 50,
         details: 'CQC1442:"For minecraft" 赞助50元'
     },
@@ -13,7 +13,7 @@ const transactionData = [
         date: '2024-04-20',
         type: 'income',
         category: '打赏',
-        description: '赞助',
+        description: '赞助打赏',
         amount: 110,
         details: 'Achilles硬盘助力110元'
     },
@@ -21,7 +21,7 @@ const transactionData = [
         date: '2024-05-08',
         type: 'income',
         category: '打赏',
-        description: '赞助',
+        description: '赞助打赏',
         amount: 126,
         details: 'Fccgyh内存助力126元'
     },
@@ -29,7 +29,7 @@ const transactionData = [
         date: '2025-03-19',
         type: 'income',
         category: '打赏',
-        description: '赞助',
+        description: '赞助打赏',
         amount: 160,
         details: 'Creation_TV电量助力160元'
     },
@@ -37,7 +37,7 @@ const transactionData = [
         date: '2025-08-09',
         type: 'income',
         category: '打赏',
-        description: '赞助',
+        description: '赞助打赏',
         amount: 24,
         details: 'Achilles加速节点助力24元'
     },
@@ -170,6 +170,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
