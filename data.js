@@ -92,6 +92,14 @@ const transactionData = [
         details: '8G内存条'
     },
     {
+        date: '2024-09-30',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '24年第3季度电力和网络费用'
+    },
+    {
         date: '2024-10-01',
         type: 'expense',
         category: '运营成本',
@@ -108,6 +116,14 @@ const transactionData = [
         details: '4TB希捷机械硬盘购买'
     },
     {
+        date: '2024-12-31',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '24年第4季度电力及网络费用'
+    },
+    {
         date: '2025-03-24',
         type: 'expense',
         category: '运营成本',
@@ -116,12 +132,28 @@ const transactionData = [
         details: '16G内存条*2'
     },
     {
+        date: '2025-03-31',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '25年第1季度电力和网络费用'
+    },
+    {
         date: '2025-04-05',
         type: 'expense',
         category: '运营成本',
         description: '云服务器',
         amount: -18,
         details: '加速节点'
+    },
+    {
+        date: '2025-06-30',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '25年第2季度电力和网络费用'
     },
     {
         date: '2025-08-04',
@@ -146,7 +178,7 @@ const transactionData = [
         description: '云服务器',
         amount: -26.8,
         details: '加速节点续费'
-    },
+    }
 
 ];
 
@@ -158,21 +190,29 @@ const categoryStats = {
     },
     expense: {
         '设备维护': -919,
-        '运营成本': -1728.32
+        '运营成本': -2448.32
     }
 };
 
 // 月度趋势数据
 const monthlyTrends = [
-    { month: '2024-03', income: 50, expense: -0 },
+    { month: '2024-03', income: 50, expense: 0 },
     { month: '2024-04', income: 110, expense: -519 },
+    { month: '2024-05', income: 126, expense: 0 },
+    { month: '2024-06', income: 0, expense: 0 },
     { month: '2024-07', income: 0, expense: -818 },
-    { month: '2024-05', income: 126, expense: -0 },
     { month: '2024-08', income: 0, expense: -91.59 },
+    { month: '2024-09', income: 0, expense: -180 },
     { month: '2024-10', income: 0, expense: -35.93 },
     { month: '2024-11', income: 59, expense: -470 },
-    { month: '2025-03', income: 160, expense: -219 },
+    { month: '2024-12', income: 0, expense: -180 },
+    { month: '2025-01', income: 0, expense: 0 },
+    { month: '2025-02', income: 0, expense: 0 },
+    { month: '2025-03', income: 160, expense: -399 },
     { month: '2025-04', income: 0, expense: -18 },
+    { month: '2025-05', income: 0, expense: 0 },
+    { month: '2025-06', income: 0, expense: -180 },
+    { month: '2025-07', income: 0, expense: 0 },
     { month: '2025-08', income: 24, expense: -475.8 }
 ];
 
@@ -180,6 +220,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
