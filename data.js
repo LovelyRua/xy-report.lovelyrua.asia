@@ -61,9 +61,9 @@ const transactionData = [
         date: '2025-08-23',
         type: 'income',
         category: '赞助打赏',
-        description: 'jojo',
+        description: '梅琳娜',
         amount: 24,
-        details: '牢菲(jojo) 为爱发电赞助35元'
+        details: '梅琳娜(jojo) 为爱发电赞助35元'
     },
     {
         date: '2025-08-23',
@@ -239,5 +239,6 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
