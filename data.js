@@ -49,6 +49,30 @@ const transactionData = [
         amount: 24,
         details: 'Achilles 加速节点助力24元'
     },
+    {
+        date: '2025-08-23',
+        type: 'income',
+        category: '赞助打赏',
+        description: '西格玛',
+        amount: 25,
+        details: '西格玛 为爱发电赞助25元'
+    },
+    {
+        date: '2025-08-23',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'jojo',
+        amount: 24,
+        details: '牢菲(jojo) 为爱发电赞助35元'
+    },
+    {
+        date: '2025-08-23',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'sonnet',
+        amount: 50,
+        details: 'sonnet 为爱发电赞助50元'
+    }
     
     // 支出记录
     {
@@ -215,4 +239,5 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
