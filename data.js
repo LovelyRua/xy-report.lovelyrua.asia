@@ -62,7 +62,7 @@ const transactionData = [
         type: 'income',
         category: '赞助打赏',
         description: 'jojo',
-        amount: 24,
+        amount: 35,
         details: 'jojo(梅琳娜) 为爱发电赞助35元'
     },
     {
@@ -209,7 +209,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 569,
+        '赞助打赏': 580,
         '算力出租': 59
     },
     expense: {
@@ -232,13 +232,14 @@ const monthlyTrends = [
     { month: '2025-03', income: 160, expense: -399 },
     { month: '2025-04', income: 0, expense: -18 },
     { month: '2025-06', income: 0, expense: -180 },
-    { month: '2025-08', income: 123, expense: -475.8 }
+    { month: '2025-08', income: 134, expense: -475.8 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
