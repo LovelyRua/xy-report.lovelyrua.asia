@@ -53,9 +53,9 @@ const transactionData = [
         date: '2025-08-23',
         type: 'income',
         category: '赞助打赏',
-        description: '西格玛',
+        description: 'PCFMD',
         amount: 25,
-        details: '西格玛 为爱发电赞助25元'
+        details: '西格玛(PCFMD) 为爱发电赞助25元'
     },
     {
         date: '2025-08-23',
@@ -247,6 +247,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
