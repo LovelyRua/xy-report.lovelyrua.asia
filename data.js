@@ -72,7 +72,7 @@ const transactionData = [
         description: 'sonnet',
         amount: 50,
         details: 'sonnet 为爱发电赞助50元'
-    }
+    },
     
     // 支出记录
     {
@@ -239,6 +239,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
