@@ -202,6 +202,14 @@ const transactionData = [
         description: '云服务器',
         amount: -26.8,
         details: '加速节点续费'
+    },
+    {
+        date: '2025-09-30',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '25年第3季度电力和网络费用'
     }
 
 ];
@@ -239,6 +247,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
