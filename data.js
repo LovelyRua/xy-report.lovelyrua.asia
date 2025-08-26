@@ -78,7 +78,7 @@ const transactionData = [
     {
         date: '2024-04-17',
         type: 'expense',
-        category: '运营成本',
+        category: '设备维护',
         description: '硬盘',
         amount: -519,
         details: 'NVMe SSD 1TB'
@@ -86,7 +86,7 @@ const transactionData = [
     {
         date: '2024-07-31',
         type: 'expense',
-        category: '运营成本',
+        category: '设备维护',
         description: '服务器',
         amount: -750,
         details: '准系统服务器采购'
@@ -94,7 +94,7 @@ const transactionData = [
     {
         date: '2024-07-31',
         type: 'expense',
-        category: '运营成本',
+        category: '设备维护',
         description: '显卡',
         amount: -68,
         details: '服务器亮机卡'
@@ -102,7 +102,7 @@ const transactionData = [
     {
         date: '2024-08-16',
         type: 'expense',
-        category: '运营成本',
+        category: '设备维护',
         description: '硬盘',
         amount: -15.59,
         details: '16G傲腾启动盘'
@@ -110,7 +110,7 @@ const transactionData = [
     {
         date: '2024-08-29',
         type: 'expense',
-        category: '运营成本',
+        category: '设备维护',
         description: '内存',
         amount: -76,
         details: '8G内存条'
@@ -126,7 +126,7 @@ const transactionData = [
     {
         date: '2024-10-01',
         type: 'expense',
-        category: '运营成本',
+        category: '设备维护',
         description: '视频采集卡',
         amount: -35.93,
         details: '服务器PiKVM采集卡'
@@ -150,7 +150,7 @@ const transactionData = [
     {
         date: '2025-03-24',
         type: 'expense',
-        category: '运营成本',
+        category: '设备维护',
         description: '内存',
         amount: -219,
         details: '16G内存条*2'
@@ -221,8 +221,8 @@ const categoryStats = {
         '算力出租': 59
     },
     expense: {
-        '设备维护': -919,
-        '运营成本': -2448.32
+        '设备维护': -2602.52,
+        '运营成本': -764.8
     }
 };
 
@@ -247,6 +247,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
