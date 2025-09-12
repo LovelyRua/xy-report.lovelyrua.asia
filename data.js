@@ -73,6 +73,22 @@ const transactionData = [
         amount: 50,
         details: 'sonnet 为爱发电赞助50元'
     },
+    {
+        date: '2025-09-12',
+        type: 'income',
+        category: '赞助打赏',
+        description: '蓝烛冻成了冰烛',
+        amount: 200,
+        details: '蓝烛冻成了冰烛 为SVChao豪掷200元'
+    },
+    {
+        date: '2025-09-12',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'Tourbillion',
+        amount: 8.8,
+        details: 'Tourbillion 为SVChao充电8.8元'
+    },
     
     // 支出记录
     {
@@ -203,6 +219,14 @@ const transactionData = [
         amount: -26.8,
         details: '加速节点续费'
     },
+    {
+        date: '2025-09-09',
+        type: 'expense',
+        category: '设备维护',
+        description: '内存',
+        amount: -120,
+        details: '16G内存条'
+    },
 //    {
 //        date: '2025-09-30',
 //        type: 'expense',
@@ -217,11 +241,11 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 580,
+        '赞助打赏': 788.8,
         '算力出租': 59
     },
     expense: {
-        '设备维护': -2602.52,
+        '设备维护': -2722.52,
         '运营成本': -764.8
     }
 };
@@ -240,13 +264,15 @@ const monthlyTrends = [
     { month: '2025-03', income: 160, expense: -399 },
     { month: '2025-04', income: 0, expense: -18 },
     { month: '2025-06', income: 0, expense: -180 },
-    { month: '2025-08', income: 134, expense: -475.8 }
+    { month: '2025-08', income: 134, expense: -475.8 },
+    { month: '2025-09', income: 208.8, expense: -120 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
