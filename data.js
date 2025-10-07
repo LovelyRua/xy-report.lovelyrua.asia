@@ -227,14 +227,14 @@ const transactionData = [
         amount: -120,
         details: '16G内存条'
     },
-//    {
-//        date: '2025-09-30',
-//        type: 'expense',
-//        category: '运营成本',
-//        description: '电网费',
-//        amount: -180,
-//        details: '25年第3季度电力和网络费用'
-//    }
+    {
+        date: '2025-09-30',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '25年第3季度电力和网络费用'
+    }
 
 ];
 
@@ -246,7 +246,7 @@ const categoryStats = {
     },
     expense: {
         '设备维护': -2722.52,
-        '运营成本': -764.8
+        '运营成本': -944.8
     }
 };
 
@@ -265,13 +265,14 @@ const monthlyTrends = [
     { month: '2025-04', income: 0, expense: -18 },
     { month: '2025-06', income: 0, expense: -180 },
     { month: '2025-08', income: 134, expense: -475.8 },
-    { month: '2025-09', income: 208.8, expense: -120 }
+    { month: '2025-09', income: 208.8, expense: -300 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
