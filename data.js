@@ -153,7 +153,7 @@ const transactionData = [
         category: '设备维护',
         description: '硬盘',
         amount: -470,
-        details: '4TB希捷机械硬盘购买'
+        details: '4TB希捷机械硬盘'
     },
     {
         date: '2024-12-31',
@@ -234,6 +234,14 @@ const transactionData = [
         description: '电网费',
         amount: -180,
         details: '25年第3季度电力和网络费用'
+    },
+    {
+        date: '2025-10-10',
+        type: 'expense',
+        category: '设备维护',
+        description: '硬盘',
+        amount: -817,
+        details: 'KOXIA固态硬盘1TB*2'
     }
 
 ];
@@ -245,7 +253,7 @@ const categoryStats = {
         '算力出租': 59
     },
     expense: {
-        '设备维护': -2722.52,
+        '设备维护': -3539.52,
         '运营成本': -944.8
     }
 };
@@ -265,13 +273,15 @@ const monthlyTrends = [
     { month: '2025-04', income: 0, expense: -18 },
     { month: '2025-06', income: 0, expense: -180 },
     { month: '2025-08', income: 134, expense: -475.8 },
-    { month: '2025-09', income: 208.8, expense: -300 }
+    { month: '2025-09', income: 208.8, expense: -300 },
+    { month: '2025-10', income: 0, expense: -817 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
