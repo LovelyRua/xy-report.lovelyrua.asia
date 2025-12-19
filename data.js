@@ -89,6 +89,14 @@ const transactionData = [
         amount: 8.8,
         details: 'Tourbillion 为SVChao充电8.8元'
     },
+    {
+        date: '2025-12-09',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'Achilles',
+        amount: 30,
+        details: 'Achilles 暖心打赏30元'
+    },
     
     // 支出记录
     {
@@ -249,7 +257,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 788.8,
+        '赞助打赏': 818.8,
         '算力出租': 59
     },
     expense: {
@@ -274,13 +282,15 @@ const monthlyTrends = [
     { month: '2025-06', income: 0, expense: -180 },
     { month: '2025-08', income: 134, expense: -475.8 },
     { month: '2025-09', income: 208.8, expense: -300 },
-    { month: '2025-10', income: 0, expense: -817 }
+    { month: '2025-10', income: 0, expense: -817 },
+    { month: '2025-12', income: 30, expense: 0 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
