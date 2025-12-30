@@ -250,8 +250,15 @@ const transactionData = [
         description: '硬盘',
         amount: -817,
         details: 'KOXIA固态硬盘1TB*2'
+    },
+    {
+        date: '2025-12-31',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '25年第4季度电力和网络费用'
     }
-
 ];
 
 // 分类统计
@@ -262,7 +269,7 @@ const categoryStats = {
     },
     expense: {
         '设备维护': -3539.52,
-        '运营成本': -944.8
+        '运营成本': -1124.8
     }
 };
 
@@ -283,13 +290,14 @@ const monthlyTrends = [
     { month: '2025-08', income: 134, expense: -475.8 },
     { month: '2025-09', income: 208.8, expense: -300 },
     { month: '2025-10', income: 0, expense: -817 },
-    { month: '2025-12', income: 30, expense: 0 }
+    { month: '2025-12', income: 30, expense: -180 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
