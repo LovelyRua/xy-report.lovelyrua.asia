@@ -315,11 +315,13 @@ const monthlyTrends = [
     { month: '2025-09', income: 208.8, expense: -300 },
     { month: '2025-10', income: 0, expense: -817 },
     { month: '2025-12', income: 30, expense: -180 },
-    { month: '2026-01', income: 350, expense: 0 }
+    { month: '2026-01', income: 100, expense: 0 },
+    { month: '2026-02', income: 250, expense: 0 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
