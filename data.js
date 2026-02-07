@@ -98,12 +98,28 @@ const transactionData = [
         details: 'Achilles 暖心打赏30元'
     },
     {
-        date: '2026-1-30',
+        date: '2026-01-30',
         type: 'income',
         category: '赞助打赏',
         description: 'GunterW',
         amount: 200,
         details: 'GunterW 为爱发电赞助200元'
+    },
+    {
+        date: '2026-02-07',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'GunterW',
+        amount: 100,
+        details: 'GunterW 为爱发电赞助100元'
+    },
+    {
+        date: '2026-02-07',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'x',
+        amount: 50,
+        details: 'x 为爱发电赞助50元'
     },
     
     // 支出记录
@@ -272,7 +288,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 1018.8,
+        '赞助打赏': 1168.8,
         '算力出租': 59
     },
     expense: {
@@ -299,10 +315,11 @@ const monthlyTrends = [
     { month: '2025-09', income: 208.8, expense: -300 },
     { month: '2025-10', income: 0, expense: -817 },
     { month: '2025-12', income: 30, expense: -180 },
-    { month: '2026-01', income: 200, expense: 0 }
+    { month: '2026-01', income: 350, expense: 0 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
