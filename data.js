@@ -74,6 +74,22 @@ const transactionData = [
         details: 'sonnet 为爱发电赞助50元'
     },
     {
+        date: '2025-08-23',
+        type: 'income',
+        category: '赞助打赏',
+        description: '777FLL',
+        amount: 20,
+        details: '777FLL 为爱发电赞助20元'
+    },
+        {
+        date: '2025-08-23',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'エレン · イェーガー',
+        amount: 15,
+        details: 'エレン · イェーガー 为爱发电赞助15元'
+    },
+    {
         date: '2025-09-12',
         type: 'income',
         category: '赞助打赏',
@@ -96,6 +112,14 @@ const transactionData = [
         description: 'Achilles',
         amount: 30,
         details: 'Achilles 暖心打赏30元'
+    },
+    {
+        date: '2025-12-09',
+        type: 'income',
+        category: '赞助打赏',
+        description: '七海夜',
+        amount: 6,
+        details: '七海夜 为爱发电赞助6元'
     },
     {
         date: '2026-01-30',
@@ -121,6 +145,23 @@ const transactionData = [
         amount: 50,
         details: 'x 为爱发电赞助50元'
     },
+    {
+        date: '2026-02-07',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'エレン · イェーガー',
+        amount: 10,
+        details: 'エレン · イェーガー 为爱发电赞助10元'
+    },
+    {
+        date: '2026-02-09',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'ONE_THE',
+        amount: 12,
+        details: 'ONE_THE(一游四方) 为爱发电赞助12元'
+    },
+    
     
     // 支出记录
     {
@@ -288,7 +329,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 1168.8,
+        '赞助打赏': 1231.8,
         '算力出租': 59
     },
     expense: {
@@ -311,17 +352,18 @@ const monthlyTrends = [
     { month: '2025-03', income: 160, expense: -399 },
     { month: '2025-04', income: 0, expense: -18 },
     { month: '2025-06', income: 0, expense: -180 },
-    { month: '2025-08', income: 134, expense: -475.8 },
+    { month: '2025-08', income: 169, expense: -475.8 },
     { month: '2025-09', income: 208.8, expense: -300 },
     { month: '2025-10', income: 0, expense: -817 },
-    { month: '2025-12', income: 30, expense: -180 },
-    { month: '2026-01', income: 100, expense: 0 },
-    { month: '2026-02', income: 250, expense: 0 }
+    { month: '2025-12', income: 36, expense: -180 },
+    { month: '2026-01', income: 200, expense: 0 },
+    { month: '2026-02', income: 172, expense: 0 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
