@@ -309,6 +309,14 @@ const transactionData = [
         details: '16G内存条'
     },
     {
+        date: '2025-09-19',
+        type: 'expense',
+        category: '运营成本',
+        description: '云服务器',
+        amount: -30,
+        details: '云计算平台充值'
+    },
+    {
         date: '2025-09-30',
         type: 'expense',
         category: '运营成本',
@@ -325,12 +333,28 @@ const transactionData = [
         details: 'KOXIA固态硬盘1TB*2'
     },
     {
+        date: '2025-10-21',
+        type: 'expense',
+        category: '运营成本',
+        description: '云服务器',
+        amount: -70,
+        details: '云计算平台充值'
+    },
+    {
         date: '2025-12-31',
         type: 'expense',
         category: '运营成本',
         description: '电网费',
         amount: -180,
         details: '25年第4季度电力和网络费用'
+    },
+    {
+        date: '2026-02-05',
+        type: 'expense',
+        category: '运营成本',
+        description: '云服务器',
+        amount: -30,
+        details: '云计算平台充值'
     }
 ];
 
@@ -342,7 +366,7 @@ const categoryStats = {
     },
     expense: {
         '设备维护': -3539.52,
-        '运营成本': -1124.8
+        '运营成本': -1254.8
     }
 };
 
@@ -353,8 +377,8 @@ const monthlyTrends = [
     { month: '2024-05', income: 126, expense: 0 },
     { month: '2024-07', income: 0, expense: -818 },
     { month: '2024-08', income: 0, expense: -91.59 },
-    { month: '2024-09', income: 0, expense: -180 },
-    { month: '2024-10', income: 0, expense: -35.93 },
+    { month: '2024-09', income: 0, expense: -210 },
+    { month: '2024-10', income: 0, expense: -85.93 },
     { month: '2024-11', income: 59, expense: -470 },
     { month: '2024-12', income: 0, expense: -180 },
     { month: '2025-03', income: 160, expense: -399 },
@@ -365,13 +389,14 @@ const monthlyTrends = [
     { month: '2025-10', income: 0, expense: -817 },
     { month: '2025-12', income: 36, expense: -180 },
     { month: '2026-01', income: 200, expense: 0 },
-    { month: '2026-02', income: 202, expense: 0 }
+    { month: '2026-02', income: 202, expense: 30 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
