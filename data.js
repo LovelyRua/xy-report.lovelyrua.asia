@@ -169,7 +169,14 @@ const transactionData = [
         amount: 30,
         details: 'space 为爱发电赞助30元'
     },
-    
+    {
+        date: '2026-02-11',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'TaShunFfymeow',
+        amount: 20,
+        details: 'TaShunFfymeow(塔顺飞喵~) 为爱发电赞助20元'
+    },
     
     // 支出记录
     {
@@ -361,7 +368,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 1261.8,
+        '赞助打赏': 1281.8,
         '算力出租': 59
     },
     expense: {
@@ -389,13 +396,14 @@ const monthlyTrends = [
     { month: '2025-10', income: 0, expense: -887 },
     { month: '2025-12', income: 36, expense: -180 },
     { month: '2026-01', income: 200, expense: 0 },
-    { month: '2026-02', income: 202, expense: -30 }
+    { month: '2026-02', income: 222, expense: -30 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
