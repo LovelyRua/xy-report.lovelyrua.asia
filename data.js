@@ -161,6 +161,14 @@ const transactionData = [
         amount: 12,
         details: 'ONE_THE(一游四方) 为爱发电赞助12元'
     },
+    {
+        date: '2026-02-10',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'space',
+        amount: 30,
+        details: 'space 为爱发电赞助30元'
+    },
     
     
     // 支出记录
@@ -329,7 +337,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 1231.8,
+        '赞助打赏': 1261.8,
         '算力出租': 59
     },
     expense: {
@@ -357,13 +365,14 @@ const monthlyTrends = [
     { month: '2025-10', income: 0, expense: -817 },
     { month: '2025-12', income: 36, expense: -180 },
     { month: '2026-01', income: 200, expense: 0 },
-    { month: '2026-02', income: 172, expense: 0 }
+    { month: '2026-02', income: 202, expense: 0 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
