@@ -199,7 +199,7 @@ const transactionData = [
         category: '赞助打赏',
         description: 'qiuan345',
         amount: 25,
-        details: 'qiuan345 为爱发电赞助30元'
+        details: 'qiuan345 为爱发电赞助25元'
     },
     
     // 支出记录
@@ -428,6 +428,7 @@ const monthlyTrends = [
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
