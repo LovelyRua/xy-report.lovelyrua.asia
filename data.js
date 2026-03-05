@@ -429,13 +429,90 @@ window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
 
+// ==============================
+// 自动核算系统
+// ==============================
 
+function round2(num) {
+    return Math.round((num + Number.EPSILON) * 100) / 100;
+}
 
+function generateFinancialReport(transactionData) {
 
+    const categoryStats = {
+        income: {},
+        expense: {}
+    };
 
+    const monthlyMap = {};
 
+    let totalIncome = 0;
+    let totalExpense = 0;
 
+    transactionData.forEach(tx => {
 
+        const { type, category, amount, date } = tx;
 
+        // ===== 分类统计 =====
+        if (!categoryStats[type][category]) {
+            categoryStats[type][category] = 0;
+        }
 
+        categoryStats[type][category] += amount;
 
+        // ===== 总计 =====
+        if (type === 'income') {
+            totalIncome += amount;
+        } else if (type === 'expense') {
+            totalExpense += amount;
+        }
+
+        // ===== 月度趋势 =====
+        const month = date.slice(0, 7);
+
+        if (!monthlyMap[month]) {
+            monthlyMap[month] = {
+                month,
+                income: 0,
+                expense: 0
+            };
+        }
+
+        monthlyMap[month][type] += amount;
+    });
+
+    // ===== 统一保留两位小数 =====
+    Object.keys(categoryStats).forEach(type => {
+        Object.keys(categoryStats[type]).forEach(cat => {
+            categoryStats[type][cat] = round2(categoryStats[type][cat]);
+        });
+    });
+
+    totalIncome = round2(totalIncome);
+    totalExpense = round2(totalExpense);
+    const netProfit = round2(totalIncome + totalExpense);
+
+    const monthlyTrends = Object.values(monthlyMap)
+        .sort((a, b) => a.month.localeCompare(b.month))
+        .map(m => ({
+            month: m.month,
+            income: round2(m.income),
+            expense: round2(m.expense)
+        }));
+
+    return {
+        summary: {
+            totalIncome,
+            totalExpense,
+            netProfit
+        },
+        categoryStats,
+        monthlyTrends
+    };
+};
+
+const report = generateFinancialReport(transactionData);
+
+console.log("汇总:", report.summary);
+console.log("分类统计:", report.categoryStats);
+console.log("月度趋势:", report.monthlyTrends);
