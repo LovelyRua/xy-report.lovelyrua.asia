@@ -193,6 +193,14 @@ const transactionData = [
         amount: 30,
         details: '七海夜 为爱发电赞助30元'
     },
+    {
+        date: '2026-03-02',
+        type: 'income',
+        category: '赞助打赏',
+        description: 'qiuan345',
+        amount: 25,
+        details: 'qiuan345 为爱发电赞助30元'
+    },
     
     // 支出记录
     {
@@ -384,7 +392,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 1411.8,
+        '赞助打赏': 1436.8,
         '算力出租': 59
     },
     expense: {
@@ -412,13 +420,15 @@ const monthlyTrends = [
     { month: '2025-10', income: 0, expense: -887 },
     { month: '2025-12', income: 36, expense: -180 },
     { month: '2026-01', income: 200, expense: 0 },
-    { month: '2026-02', income: 352, expense: -30 }
+    { month: '2026-02', income: 352, expense: -30 },
+    { month: '2026-03', income: 25, expense: 0 }
 ];
 
 // 导出数据
 window.transactionData = transactionData;
 window.categoryStats = categoryStats;
 window.monthlyTrends = monthlyTrends;
+
 
 
 
