@@ -386,6 +386,22 @@ const transactionData = [
         description: '云服务器',
         amount: -30,
         details: '云计算平台充值'
+    },
+    {
+        date: '2026-03-28',
+        type: 'expense',
+        category: '设备维护',
+        description: '散热扇',
+        amount: -86.08,
+        details: '更换散热风扇*2'
+    },
+    {
+        date: '2025-03-31',
+        type: 'expense',
+        category: '运营成本',
+        description: '电网费',
+        amount: -180,
+        details: '26年第1季度电力和网络费用'
     }
 ];
 
@@ -396,8 +412,8 @@ const categoryStats = {
         '算力出租': 59
     },
     expense: {
-        '设备维护': -3539.52,
-        '运营成本': -1254.8
+        '设备维护': -3625.6,
+        '运营成本': -1434.8
     }
 };
 
@@ -421,7 +437,7 @@ const monthlyTrends = [
     { month: '2025-12', income: 36, expense: -180 },
     { month: '2026-01', income: 200, expense: 0 },
     { month: '2026-02', income: 352, expense: -30 },
-    { month: '2026-03', income: 25, expense: 0 }
+    { month: '2026-03', income: 25, expense: 266.08 }
 ];
 
 // 导出数据
