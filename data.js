@@ -203,11 +203,19 @@ const transactionData = [
     },
     {
         date: '2026-03-31',
-        type: 'expense',
+        type: 'income',
         category: '赞助打赏',
         description: 'Achilles',
         amount: 20,
         details: 'Achilles 暖心打赏20元'
+    },
+    {
+        date: '2026-03-31',
+        type: 'income',
+        category: '赞助打赏',
+        description: '吾',
+        amount: 35,
+        details: '吾 暖心打赏35元'
     },
     
     // 支出记录
