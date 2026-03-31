@@ -214,8 +214,8 @@ const transactionData = [
         type: 'income',
         category: '赞助打赏',
         description: '吾',
-        amount: 35,
-        details: '吾 暖心打赏35元'
+        amount: 36,
+        details: '吾 暖心打赏36元'
     },
     
     // 支出记录
@@ -424,7 +424,7 @@ const transactionData = [
 // 分类统计
 const categoryStats = {
     income: {
-        '赞助打赏': 1456.8,
+        '赞助打赏': 1492.8,
         '算力出租': 59
     },
     expense: {
@@ -453,7 +453,7 @@ const monthlyTrends = [
     { month: '2025-12', income: 36, expense: -180 },
     { month: '2026-01', income: 200, expense: 0 },
     { month: '2026-02', income: 352, expense: -30 },
-    { month: '2026-03', income: 45, expense: 266.08 }
+    { month: '2026-03', income: 81, expense: 266.08 }
 ];
 
 // 导出数据
