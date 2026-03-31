@@ -396,7 +396,7 @@ const transactionData = [
         details: '更换散热风扇*2'
     },
     {
-        date: '2025-03-31',
+        date: '2026-03-31',
         type: 'expense',
         category: '运营成本',
         description: '电网费',
